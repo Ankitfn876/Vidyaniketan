@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ghpages": "ng build --configuration production --base-href /Vidyaniketan/",
+    "deploy": "ng build --configuration production --base-href /Vidyaniketan/ && npx angular-cli-ghpages --dir=dist/modern-school/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
